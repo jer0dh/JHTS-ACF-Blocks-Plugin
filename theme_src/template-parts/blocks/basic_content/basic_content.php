@@ -41,10 +41,11 @@ if ( ! empty( $block['align'] ) ) {
 }
 
 // Create id attribute allowing for custom "anchor" value.
-$id = $blockname . '-' . $block['type'];
+$id = $block['id'];
 if ( ! empty( $block['anchor'] ) ) {
 	$id = $block['anchor'];
 }
+
 
 
 $attributes = '';

@@ -100,7 +100,7 @@ class Acf_Blocks_Plugin {
 			'keywords'        => array( 'jhts blocks' ),  //up to 3 strings can be added - helpful when searching in editor
 		//	'mode'            => 'preview',
 			'alignment'       => 'full',
-			'supports'        => array( 'align' => false )
+			'supports'        => array( 'align' => true, 'anchor' => true )
 		) );
 
 
@@ -115,7 +115,7 @@ class Acf_Blocks_Plugin {
 			'keywords'        => array( 'jhts blocks' ),
 			'mode'            => 'preview',
 			'alignment'       => 'full',
-			'supports'        => array( 'align' => false )
+			'supports'        => array( 'align' => true, 'anchor' => true )
 		) );
 
 
