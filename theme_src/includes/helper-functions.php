@@ -76,11 +76,11 @@ function acf_blocks_ea_icon( $atts = array() ) {
 function acf_blocks_section_margin() {
 	$return = '';
 
-	$mp = get_field('mp');
+	$mp = get_field( 'mp' );
 
-	if($mp) {
-		$margin_top = isset($mp['mt'])? $mp['mt']:false;
-		$margin_bottom = isset($mp['mb'])? $mp['mb']:false;
+	if ( $mp ) {
+		$margin_top    = isset( $mp['mt'] ) ? $mp['mt'] : false;
+		$margin_bottom = isset( $mp['mb'] ) ? $mp['mb'] : false;
 	}
 
 	if ( $margin_top && $margin_top > 0 ) {
@@ -91,17 +91,17 @@ function acf_blocks_section_margin() {
 		$return .= ' mb-' . intval( $margin_bottom );
 	}
 
-	return ($return === '')? false : $return;
+	return ( $return === '' ) ? false : $return;
 }
 
 function acf_blocks_section_padding() {
 	$return = '';
 
-	$mp = get_field('mp');
+	$mp = get_field( 'mp' );
 
-	if($mp) {
-		$padding_top = isset($mp['pt'])? $mp['pt']:false;
-		$padding_bottom = isset($mp['pb'])? $mp['pb']:false;
+	if ( $mp ) {
+		$padding_top    = isset( $mp['pt'] ) ? $mp['pt'] : false;
+		$padding_bottom = isset( $mp['pb'] ) ? $mp['pb'] : false;
 	}
 	if ( $padding_top && $padding_top > 0 ) {
 		$return .= ' pt-' . intval( $padding_top );
@@ -111,5 +111,5 @@ function acf_blocks_section_padding() {
 		$return .= ' pb-' . intval( $padding_bottom );
 	}
 
-	return ($return === '')? false : $return;
+	return ( $return === '' ) ? false : $return;
 }

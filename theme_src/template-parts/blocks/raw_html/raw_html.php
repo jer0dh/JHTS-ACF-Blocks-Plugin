@@ -12,8 +12,7 @@
 $blockname = 'raw_html';
 
 
-
-$content = get_field('raw_html_content', null,false);
+$content = get_field( 'raw_html_content', null, false );
 
 $background = '';
 if ( $background_color && $background_color != 'none' ) {
@@ -49,19 +48,19 @@ if ( $id ) {
 	$attributes .= ' id="' . esc_attr( $id ) . '" ';
 }
 
-$attributes .= ' class="' . esc_attr( $className ) .  '"';
+$attributes .= ' class="' . esc_attr( $className ) . '"';
 
 
 ?>
-	<section <?php echo $attributes; ?>>
-		<div class="container <?php echo ($inner_wrap)? 'container--inner' : ''; ?> <?php echo ($middle_wrap)? 'container--middle' : ''; ?> ">
-			<div class="row <?php echo esc_attr($padding) . (($is_centered_vertically) ? ' align-items-center' : ''); ?>">
-				<div class="col-12 <?php echo ($is_centered_vertically) ? 'rm-last-element-mb': ''; ?>">
-					<?php echo do_shortcode( $content ) ; ?>
-				</div>
-			</div>
-		</div>
-	</section>
+    <section <?php echo $attributes; ?>>
+        <div class="container <?php echo ( $inner_wrap ) ? 'container--inner' : ''; ?> <?php echo ( $middle_wrap ) ? 'container--middle' : ''; ?> ">
+            <div class="row <?php echo esc_attr( $padding ) . ( ( $is_centered_vertically ) ? ' align-items-center' : '' ); ?>">
+                <div class="col-12 <?php echo ( $is_centered_vertically ) ? 'rm-last-element-mb' : ''; ?>">
+					<?php echo do_shortcode( $content ); ?>
+                </div>
+            </div>
+        </div>
+    </section>
 
 <?php
 

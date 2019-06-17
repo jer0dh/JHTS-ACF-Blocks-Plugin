@@ -47,7 +47,6 @@ if ( ! empty( $block['anchor'] ) ) {
 }
 
 
-
 $attributes = '';
 if ( $id ) {
 	$attributes .= ' id="' . esc_attr( $id ) . '" ';

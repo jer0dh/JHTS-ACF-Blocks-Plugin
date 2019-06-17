@@ -97,8 +97,9 @@ class Acf_Blocks_Plugin {
 			'render_template' => ACF_BLOCKS_PATH . 'template-parts/blocks/basic_content/basic_content.php',
 			'category'        => 'formatting',
 			'icon'            => 'admin-comments',
-			'keywords'        => array( 'jhts blocks' ),  //up to 3 strings can be added - helpful when searching in editor
-		//	'mode'            => 'preview',
+			'keywords'        => array( 'jhts blocks' ),
+			//up to 3 strings can be added - helpful when searching in editor
+			//	'mode'            => 'preview',
 			'alignment'       => 'full',
 			'supports'        => array( 'align' => true, 'anchor' => true )
 		) );
