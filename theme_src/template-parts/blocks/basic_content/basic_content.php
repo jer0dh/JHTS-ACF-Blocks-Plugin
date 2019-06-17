@@ -53,7 +53,7 @@ if ( $id ) {
 	$attributes .= ' id="' . esc_attr( $id ) . '" ';
 }
 
-$attributes .= ' class="' . esc_attr( $className ) . ' ' . esc_attr( $margin ) . '"';
+$attributes .= ' class="' . esc_attr( $className ) . '"';
 
 ?>
 
