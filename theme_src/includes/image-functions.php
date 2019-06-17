@@ -1,6 +1,6 @@
 <?php
 
-// 	add_filter( 'wp_get_attachment_image_attributes', 'acf_blocks_image_markup_responsive_background',10,2 );
+// 	add_filter( 'wp_get_attachment_image_attributes', 'acf_blocks_image_markup_responsive_background',20,2 );
 
 function acf_blocks_image_markup_responsive_background( $attributes, $image = null ) {
 
